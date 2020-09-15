@@ -1,0 +1,156 @@
+@import url(https://fonts.google.com/specimen/Lato);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #ffffff;
+  margin-top:50px;
+  margin-left: 40px;
+  position: relative;
+
+}
+
+.wrapper .sidebar h2 {
+  color: #ff0054;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 0 solid #bdb8d7;
+  border-top: 0 solid rgba(225,225,225,0.05);
+}
+
+
+.wrapper .sidebar ul li a{
+    color: #FFCBDD;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+width: 5px;
+}
+
+.wrapper .sidebar ul li:hover{
+    text-emphasis: #ff0054;
+}
+
+.wrapper .sidebar ul li:hover a{
+    color: #ff0054
+}
+
+.wrapper .main{
+    width: auto;
+    height: auto;
+    margin-left: 250px;
+    position:fixed;
+}
+.wrapper .main .header{
+    padding: 120px;
+    background: #B8405B;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns:510px 510px 510px;
+}
+
+.container {
+  position: relative;
+  width: 20%;
+}
+
+.image {
+  opacity:1;
+  width: 500px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-top: 50px;
+  vertical-align: middle;
+  border-radius: 5px;
+
+}
+
+img{
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left:260%;
+  transform: translate(-50%, -50%);
+  text-align:justify-all;
+}
+
+.container:hover .image {
+  opacity: 0.2;
+}
+
+.container:hover .middle {
+  opacity: 0.3;
+}
+
+.text {
+  color:#000;
+  font-size: 20px;
+  padding: 50px 50px;
+  font-family:'lato', sans-serif;
+  opacity: 1;
+}
+
+
+
+/* project pages */
+.project-header{
+    color: #ff0054;
+    padding: 2px;
+}
+
+.project-summary {
+  display: grid;
+  grid-template-columns:1fr 500px;
+}
+
+.wrapper .main-content{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.project {
+  padding: 10px
+}
+
+.image-two{
+   width:  400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+}
